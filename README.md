@@ -1,6 +1,6 @@
 # Bootstrap 5 Multiple Level Dropdown.
 
-* For Bootstrap 4, please visit [Bootstrap 4 Multiple Level Dropdown](https://github.com/dallaslu/bootstrap-4-multi-level-dropdown) *
+For Bootstrap 4, please visit [Bootstrap 4 Multiple Level Dropdown](https://github.com/dallaslu/bootstrap-4-multi-level-dropdown)
 
 Using official HTML without adding extra CSS styles and classes, it's just like native support. 
 
