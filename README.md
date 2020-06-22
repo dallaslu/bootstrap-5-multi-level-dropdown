@@ -23,25 +23,33 @@ If your want a hover tigger, just add class and some custom styles to reduce spa
 ```
 Then, add event handler (suggest 'toggle' for best experience):
 ```javascript
-document.querySelectorAll('.dropdown-hover').addEventListener('mouseenter', function() {
-    if (!e.target.classList.contains('show')) {
-        bs.Dropdown.getInstanec(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
-    }
+document.querySelectorAll('.dropdown-hover').forEach(function(dd) {
+    dd.addEventListener('mouseenter', function(e) {
+        if (!e.target.classList.contains('show')) {
+            bootstrap.Dropdown.getInstance(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
+        }
+    });
 });
-document.querySelectorAll('.dropdown-hover').addEventListener('mouseleave', function() {
-    if (e.target.classList.contains('show')) {
-        bs.Dropdown.getInstanec(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
-    }
+document.querySelectorAll('.dropdown-hover').forEach(function(dd) {
+    dd.addEventListener('mouseleave', function(e) {
+        if (e.target.classList.contains('show')) {
+            bootstrap.Dropdown.getInstance(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
+        }
+    });
 });
-document.querySelectorAll('.dropdown-hover-all').addEventListener('mouseenter', '.dropdown', function(e) {
-    if (e.target.classList.contains('.dropdown') && !e.target.classList.contains('show')) {
-        bs.Dropdown.getInstanec(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
-    }
+document.querySelectorAll('.dropdown-hover-all').forEach(function(dd) {
+    dd.addEventListener('mouseenter', function(e) {
+        if (e.target.classList.contains('.dropdown') && !e.target.classList.contains('show')) {
+            bootstrap.Dropdown.getInstance(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
+        }
+    });
 });
-document.querySelectorAll('.dropdown-hover-all').addEventListener('mouseenter', '.dropdown', function(e) {
-    if (e.target.classList.contains('.dropdown') && e.target.classList.contains('show')) {
-        bs.Dropdown.getInstanec(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
-    }
+document.querySelectorAll('.dropdown-hover-all').forEach(function(dd) {
+    dd.addEventListener('mouseenter', function(e) {
+        if (e.target.classList.contains('.dropdown') && e.target.classList.contains('show')) {
+            bootstrap.Dropdown.getInstance(this.querySelector(':scope>[data-toggle="dropdown"]')).toggle();
+        }
+    });
 });
 ```
 Or just using:
