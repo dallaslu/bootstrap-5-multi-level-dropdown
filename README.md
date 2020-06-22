@@ -4,7 +4,7 @@
 
 Using official HTML without adding extra CSS styles and classes, it's just like native support. 
 
-All things listed in https://getbootstrap.com/docs/4.4/components/dropdowns/ are not effected. You can use css classes and js methods/events/options freely.
+All things listed in https://v5.getbootstrap.com/docs/5.0/components/dropdowns/ are not effected. You can use css classes and js methods/events/options freely.
 
 Dropdown of bootstrap can be easily changed to infinite level. It's a pity that they didn't do it.
 
