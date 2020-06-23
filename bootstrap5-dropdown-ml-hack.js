@@ -21,4 +21,24 @@
             e.stopPropagation(); // do not need pop in multi level mode
         });
     });
+
+    // for hover
+    function getDropdown(element) {
+        return $bs.Dropdown.getInstance(element) || new $bs.Dropdown(element);
+    }
+
+    document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
+        dd.addEventListener('mouseenter', function(e) {
+            let toggle = e.target.querySelector(':scope>[data-toggle="dropdown"]');
+            if (!toggle.classList.contains('show')) {
+                getDropdown(toggle).toggle();
+            }
+        });
+        dd.addEventListener('mouseleave', function(e) {
+            let toggle = e.target.querySelector(':scope>[data-toggle="dropdown"]');
+            if (toggle.classList.contains('show')) {
+                getDropdown(toggle).toggle();
+            }
+        });
+    });
 })(bootstrap);
