@@ -11,7 +11,7 @@ Dropdown of bootstrap can be easily changed to infinite level. It's a pity that 
 ## Usage
 
 ### Base
-Just add js after jquery and bootstrap js files 
+Just add js after bootstrap js files:
 
 ```html
 <script src="https://raw.githubusercontent.com/dallaslu/bootstrap-4-multi-level-dropdown/master/bootstrap4-dropdown-ml-hack.js"></script>
