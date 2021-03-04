@@ -16,10 +16,46 @@ Just add js after bootstrap js files:
 ```html
 <script src="https://raw.githubusercontent.com/dallaslu/bootstrap-5-multi-level-dropdown/master/bootstrap5-dropdown-ml-hack.js"></script>
 ```
+#### Base Example
+```html
+...
+<div class="dropdown mt-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <!-- level #2 -->
+        <div class="dropdown dropend">
+            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layouts</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                <a class="dropdown-item" href="#">Basic</a>
+                <a class="dropdown-item" href="#">Compact Aside</a>
+                <div class="dropdown-divider"></div>
+                <!-- level #3 -->
+                <div class="dropdown dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Custom</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                        <a class="dropdown-item" href="#">Fullscreen</a>
+                        <a class="dropdown-item" href="#">Empty</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Magic</a>
+                    </div>
+                </div>
+                <!-- level #3 -->
+            </div>
+        </div>
+        <!-- /level #2 -->
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+...
+<script src="https://raw.githubusercontent.com/dallaslu/bootstrap-5-multi-level-dropdown/master/bootstrap5-dropdown-ml-hack.js"></script>
+```
 ### Hover
 If your want a hover tigger, just add class and some custom styles to reduce spacing to avoid triggering mouseleave.
 ```css
-.dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu { margin:0 }
+.dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu.dropend { margin-left:-1px !important }
 ```
 Then, add classes for dropdown elements;
 ```html
@@ -30,9 +66,9 @@ Then, add classes for dropdown elements;
   <!-- toggle and menu elements -->
 </div>
 ```
-## Example
+#### Hover Example
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/dallaslu/bootstrap-5-multi-level-dropdown/master/bootstrap5-dropdown-ml-hack.css" />
+<link rel="stylesheet" href="https://raw.githubusercontent.com/dallaslu/bootstrap-5-multi-level-dropdown/master/bootstrap5-dropdown-ml-hack-hover.css" />
 ...
 <div class="dropdown-hover-all">
   <!-- .dropdown elements -->
@@ -46,4 +82,4 @@ Then, add classes for dropdown elements;
 
 ## Demo
 
-Here is a perfect demo: https://jsfiddle.net/dallaslu/mvk4uhzL/ (works well with Bootstrap v5.0.0)
+Here is a perfect demo: https://jsfiddle.net/dallaslu/mvk4uhzL/ (works well with Bootstrap v5.0.0-beta2)
