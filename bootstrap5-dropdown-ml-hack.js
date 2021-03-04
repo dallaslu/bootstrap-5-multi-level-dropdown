@@ -1,5 +1,5 @@
 (function($bs) {
-	const CLASS_NAME = 'has-child-dropdown-show';
+    const CLASS_NAME = 'has-child-dropdown-show';
     $bs.Dropdown.prototype.toggle = function(_orginal) {
         return function() {
             document.querySelectorAll('.' + CLASS_NAME).forEach(function(e) {
