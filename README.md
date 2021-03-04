@@ -14,7 +14,7 @@ Dropdown of bootstrap can be easily changed to infinite level. It's a pity that 
 Just add js after bootstrap js files:
 
 ```html
-<script src="https://raw.githubusercontent.com/dallaslu/bootstrap-4-multi-level-dropdown/master/bootstrap4-dropdown-ml-hack.js"></script>
+<script src="https://raw.githubusercontent.com/dallaslu/bootstrap-5-multi-level-dropdown/master/bootstrap5-dropdown-ml-hack.js"></script>
 ```
 ### Hover
 If your want a hover tigger, just add class and some custom styles to reduce spacing to avoid triggering mouseleave.
