@@ -42,7 +42,7 @@ Just add js after bootstrap js files:
                         <a class="dropdown-item" href="#">Magic</a>
                     </div>
                 </div>
-                <!-- level #3 -->
+                <!-- /level #3 -->
             </div>
         </div>
         <!-- /level #2 -->
@@ -56,6 +56,10 @@ Just add js after bootstrap js files:
 If your want a hover tigger, just add class and some custom styles to reduce spacing to avoid triggering mouseleave.
 ```css
 .dropdown-hover-all .dropdown-menu, .dropdown-hover > .dropdown-menu.dropend { margin-left:-1px !important }
+```
+or:
+```html
+<link rel="stylesheet" href="https://raw.githubusercontent.com/dallaslu/bootstrap-5-multi-level-dropdown/master/bootstrap5-dropdown-ml-hack-hover.css" />
 ```
 Then, add classes for dropdown elements;
 ```html
