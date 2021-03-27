@@ -19,6 +19,9 @@
                 this.classList.remove(CLASS_NAME);
                 e.preventDefault();
             }
+            if(e.clickEvent && e.clickEvent.composedPath().some(el=>el.classList && el.classList.contains('dropdown-toggle'))){
+                e.preventDefault();
+            }
             e.stopPropagation(); // do not need pop in multi level mode
         });
     });
