@@ -86,4 +86,4 @@ Then, add classes for dropdown elements;
 
 ## Demo
 
-Here is a perfect demo: https://jsfiddle.net/dallaslu/mvk4uhzL/ (works well with Bootstrap v5.0.0-beta2)
+Here is a perfect demo: https://jsfiddle.net/dallaslu/mvk4uhzL/ (works well with Bootstrap v5.0.0-beta3)
