@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap5-dropdown-ml-hack",
+  "version": "5.0.2",
+  "description": "Bootstrap 5 Multiple Level Dropdown",
+  "main": "bootstrap5-dropdown-ml-hack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dallaslu/bootstrap-5-multi-level-dropdown.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Dropdown"
+  ],
+  "author": "Dallas Lu",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2"
+  },
+  "dependencies": {}
+}
