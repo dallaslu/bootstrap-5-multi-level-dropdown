@@ -19,29 +19,24 @@
                 this.classList.remove(CLASS_NAME);
                 e.preventDefault();
             }
-            if(e.clickEvent && e.clickEvent.composedPath().some(el=>el.classList && el.classList.contains('dropdown-toggle'))){
-                e.preventDefault();
-            }
             e.stopPropagation(); // do not need pop in multi level mode
         });
     });
 
     // for hover
-    function getDropdown(element) {
-        return $bs.Dropdown.getInstance(element) || new $bs.Dropdown(element);
-    }
-
     document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
         dd.addEventListener('mouseenter', function(e) {
             let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
             if (!toggle.classList.contains('show')) {
-                getDropdown(toggle).toggle();
+                $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                dd.classList.add(CLASS_NAME);
+                $bs.Dropdown.clearMenus();
             }
         });
         dd.addEventListener('mouseleave', function(e) {
             let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
             if (toggle.classList.contains('show')) {
-                getDropdown(toggle).toggle();
+                $bs.Dropdown.getOrCreateInstance(toggle).toggle();
             }
         });
     });
