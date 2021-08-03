@@ -86,4 +86,14 @@ Then, add classes for dropdown elements;
 
 ## Demo
 
+### demo.html
+```bash
+git clone git@github.com:dallaslu/bootstrap-5-multi-level-dropdown.git
+cd bootstrap-5-multi-level-dropdown
+npm install
+gulp
+```
+
+### jsfiddle
+
 Here is a perfect demo: https://jsfiddle.net/dallaslu/mvk4uhzL/ (works well with Bootstrap v5.0.2)
