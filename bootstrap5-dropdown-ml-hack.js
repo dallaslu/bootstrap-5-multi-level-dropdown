@@ -30,7 +30,7 @@
             if (!toggle.classList.contains('show')) {
                 $bs.Dropdown.getOrCreateInstance(toggle).toggle();
                 dd.classList.add(CLASS_NAME);
-                $bs.Dropdown.clearMenus();
+                $bs.Dropdown.clearMenus(e);
             }
         });
         dd.addEventListener('mouseleave', function(e) {
